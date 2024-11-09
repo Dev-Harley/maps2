@@ -4,21 +4,21 @@ document.addEventListener('DOMContentLoaded', function() {
       name: "DLF Maps",
       description: "The bustling heart of the city with skyscrapers, vibrant nightlife, and cultural attractions.",
       maps: [
-        { name: "DLF Phase 2", image: "./src/Dlf/DLF PH-2.webp" },
-        { name: "DLF Phase 3", image: "./src/Dlf/DLF-PH-3.webp" },
-        { name: "DLF Phase 4", image: "./src/Dlf/DLF PHASE- 4.webp" },
-        { name: "DLF Phase 5", image: "./src/Dlf/DLF PHASE-5.webp" },
-        { name: "DLF ALMEDA", image: "./src/Dlf/DLF ALMEDA.webp" },
-        { name: "DLF GARDEN CITY", image: "./src/Dlf/DLF GARDEN CITY.webp" },
-        { name: "DLF OLD COLONY", image: "./src/Dlf/DLF OLD COLONY.webp" },
+        { name: "DLF Phase 2", image: "./Dlf/DLF PH-2.webp" },
+        { name: "DLF Phase 3", image: "./Dlf/DLF-PH-3.webp" },
+        { name: "DLF Phase 4", image: "./Dlf/DLF PHASE- 4.webp" },
+        { name: "DLF Phase 5", image: "./Dlf/DLF PHASE-5.webp" },
+        { name: "DLF ALMEDA", image: "./Dlf/DLF ALMEDA.webp" },
+        { name: "DLF GARDEN CITY", image: "./Dlf/DLF GARDEN CITY.webp" },
+        { name: "DLF OLD COLONY", image: "./Dlf/DLF OLD COLONY.webp" },
       ]
     },
     {
       name: "South City Maps",
       description: "A scenic area along the river with parks, walking trails, and recreational facilities.",
       maps: [
-        { name: "South City - I", image: "./src/South_City/SOUTH CITY_1.webp" },
-        { name: "South City - II", image: "./src/South_City/SOUTH CITY _2.webp" },
+        { name: "South City - I", image: "./South_City/SOUTH CITY_1.webp" },
+        { name: "South City - II", image: "./South_City/SOUTH CITY _2.webp" },
       ]
     },
     // {
@@ -34,11 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
       name: "Other Township Maps",
       description: "A scenic area along the river with parks, walking trails, and recreational facilities.",
       maps: [
-        { name: "PATAUDI", image: "./src/Other_Township/MP-PATAUDI_2031.webp" },
-        { name: "REWARI", image: "./src/Other_Township/MP- REWARI.webp" },
-        { name: "DHARUHERA", image: "./src/Other_Township/MP-DHARUHERA.webp" },
-        { name: "MANESAR", image: "./src/Other_Township/MPMANESAR.webp" },
-        { name: "SOHNA", image: "./src/Other_Township/MP-SOHNA_2031.webp" },
+        { name: "PATAUDI", image: "./Other_Township/MP-PATAUDI_2031.webp" },
+        { name: "REWARI", image: "./Other_Township/MP- REWARI.webp" },
+        { name: "DHARUHERA", image: "./Other_Township/MP-DHARUHERA.webp" },
+        { name: "MANESAR", image: "./Other_Township/MPMANESAR.webp" },
+        { name: "SOHNA", image: "./Other_Township/MP-SOHNA_2031.webp" },
       ]
     },
   ];
