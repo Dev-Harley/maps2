@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Optimal Realty | Maps</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="loader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: #3d4b34; color: #e1d1b2; display: flex; justify-content: center; align-items: center; font-size: 2em; z-index: 9999; font-family: 'Crimson Text', serif;">
+    <p id="loading-text" style="margin: 0;">Loading</p>
+</div>
+
+<!-- Add this within <style> or in an external CSS file -->
+  <style>
+    /* Keyframes for typing dots effect */
+    @keyframes typing-dots {
+        0% {
+            content: "Loading.";
+        }
+        33% {
+            content: "Loading..";
+        }
+        66% {
+            content: "Loading...";
+        }
+        100% {
+            content: "Loading....";
+        }
+    }
+</style>
+
+<script>
+   
+    function typingEffect() {
+        var loadingText = document.getElementById('loading-text');
+        var text = 'Loading';
+        var dots = 0;
+        
+     
+        var interval = setInterval(function() {
+        
+            loadingText.textContent = text + '.'.repeat(dots);
+            dots = (dots + 1) % 4;  
+        }, 500);
+      
+        setTimeout(function() {
+            clearInterval(interval);  
+            document.getElementById('loader').style.display = 'none'; 
+            document.getElementById('main-content').style.display = 'block'; 
+        }, 4000);  
+    }
+
+
+    window.onload = function() {
+        typingEffect();
+    };
+</script>
+
+  <div id="main-content" style="display: none; padding: 20px; font-family: Arial, sans-serif;">
+  <div class="wrapper">
+    <header class="header" style="text-align: center;">
+      <div class="container" style="display: block; text-align: center; margin: 0 auto;">
+        <div class="header-content" style="display: block; text-align: center;">
+          <h1 class="logo" style="display: block; margin: 0 auto;">
+            <img src="https://www.optimalrealty.in/src/images/Optimal-Gif.gif" alt="" style="max-width: 200px; max-height: 200px;">
+          </h1>
+          <nav style="display: block; text-align: center;">
+            <ul class="nav-links" style="display: inline-block; padding: 0; margin: 0; list-style-type: none; text-align: center;">
+              <li style="display: inline; margin: 0 15px;">
+                <a href="#" style="text-decoration: none; font-size: 20px;">Home</a>
+              </li>
+              <li style="display: inline; margin: 0 15px;">
+                <a href="#" style="text-decoration: none; font-size: 20px;">About</a>
+              </li>
+              <li style="display: inline; margin: 0 15px;">
+                <a href="#" style="text-decoration: none; font-size: 20px;">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    
+    
+    
+    
+
+    <main class="main-content">
+      <h2 class="title">Explore the City Areas</h2>
+
+      <div class="areas-list">
+        <!-- Area items will be dynamically added here -->
+      </div>
+    </main>
+
+    <hr style="color: #e1d1b2;">
+
+    <!-- Popup Image Modal -->
+    <div id="image-popup" class="popup">
+      <div class="popup-content">
+        <span id="popup-close" class="close-popup">&times;</span>
+        <img id="popup-image" src="" alt="Map Image" class="popup-image">
+        <div class="popup-footer">
+          <button id="download-btn" class="download-btn">Download</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer" style="text-align: center; padding: 20px 0; background-color: #3d4b34; color: #e1d1b2;">
+      <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        <p>&copy;  1996 Optimal Realty, All Rights Reserved</p>
+        <p>
+          <a href="#" style="color: #e1d1b2; text-decoration: none;">Privacy Policy</a> |
+          <a href="#" style="color: #e1d1b2; text-decoration: none;">Terms of Service</a>
+        </p>
+      </div>
+    </footer>
+  </div>
+  <div
+  style="
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: #e1d1b2b9;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 50%;
+    z-index: 9999;
+    transition: transform 0.3s ease-in-out;
+    text-decoration: none;
+    margin-left: 15px;
+  "
+>
+  <a
+    href="https://wa.me/+918448318033?text=Hi%20I'm%20interested%20to%20purchase%20a%20Property%20in%20Gurugram"
+    target="_blank"
+  >
+    <i
+      class="fab fa-whatsapp"
+      style="font-size: 30px; color: #3d4b34"
+    ></i>
+  </a>
+</div>
+</div>
+  <script src="scripts.js"></script>
+
+</body>
+</html>
